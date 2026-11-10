@@ -1,0 +1,186 @@
+/* Append to the app's src/styles.css. Do not rewrite the starter styles:
+   they carry the semantic variables and the light/dark values. */
+
+.app-shell.wide {
+  width: min(1280px, 100% - 32px);
+}
+
+.calendar-header h1 {
+  margin-bottom: 8px;
+}
+
+.schedule-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.schedule-list li {
+  display: grid;
+  grid-template-columns: 200px 170px 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.schedule-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.schedule-when {
+  color: var(--fg-secondary);
+}
+.schedule-account {
+  font-weight: 600;
+}
+
+.toolbar {
+  flex-wrap: wrap;
+}
+.filters {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+/* Week calendar */
+.week {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.week-scroll {
+  overflow-x: auto; /* on narrow screens the week scrolls sideways instead of squashing cards */
+}
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 12px;
+  min-width: 1150px;
+}
+.day-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 80px;
+  padding: 8px;
+  border-radius: var(--radius-lg);
+  background: var(--overlay-hover);
+}
+.day-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tile {
+  appearance: none;
+  border: none;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-card);
+}
+.tile:hover {
+  box-shadow: var(--shadow-overlay);
+}
+.tile-head {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tile-img {
+  width: 100%;
+  height: auto; /* full image, never cropped */
+  display: block;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+.tile-text {
+  font-size: 14px;
+  line-height: 1.5;
+  user-select: text;
+}
+
+/* Post detail / list */
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.detail .post-card {
+  width: 100%;
+}
+.post-card {
+  max-width: 760px;
+  width: 100%;
+}
+.post-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.post-title {
+  margin: 6px 0 2px;
+  font-size: 1.25rem;
+}
+.post-caption {
+  border-left: 3px solid var(--border-default);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 16px;
+  user-select: text;
+}
+.post-caption p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+.post-caption p:last-child {
+  margin-bottom: 0;
+}
+.post-actions {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.post-visuals {
+  display: grid;
+  gap: 20px;
+}
+.post-visual {
+  margin: 0;
+}
+.post-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+}
+.post-visual figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+.post-notes {
+  margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+  .schedule-list li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+  .post-head {
+    flex-direction: column;
+  }
+}

@@ -1,9 +1,15 @@
 ---
 name: slop-edit
 description: Line-edit a draft so it stops reading as AI-written. Use before delivering any post, caption, blog article, email or page copy, or when someone says a draft "sounds like AI", "is slop", "is vague" or "is corporate". Runs a mechanical lint, then a construction-level hand pass, and appends every new reviewer correction to a call-outs file so it never recurs.
+license: MIT
+metadata:
+  author: StartupCookie
+  homepage: https://startupcookie.com
 ---
 
 # Slop Edit
+
+> Made by [StartupCookie](https://startupcookie.com), a San Francisco marketing team for B2B startups.
 
 A ban list alone does not make prose sound human. Blacklists never converge: block one phrase and the model reaches for its nearest sibling. This skill works in three layers:
 

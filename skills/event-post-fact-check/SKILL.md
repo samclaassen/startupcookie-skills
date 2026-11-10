@@ -1,9 +1,15 @@
 ---
 name: event-post-fact-check
 description: Draft and fact-check social posts about a conference, summit, talk or trade show so every name, affiliation, session, sponsorship, photo and hashtag is verified before publishing. Use for post-event LinkedIn posts by a speaker or attendee, company-page event recaps, and speaker shout-outs. Separates what the official program proves from what someone remembers.
+license: MIT
+metadata:
+  author: StartupCookie
+  homepage: https://startupcookie.com
 ---
 
 # Event Post Fact-Check
+
+> Made by [StartupCookie](https://startupcookie.com), a San Francisco marketing team for B2B startups.
 
 Event posts go wrong in predictable ways: a sponsor that wasn't, a speaker's old affiliation, a photo paired with the wrong talk, a summary of a talk the author didn't attend, an "official" hashtag nobody uses. This skill drafts the post **and** produces a claims table showing where every fact came from.
 

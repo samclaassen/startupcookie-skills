@@ -1,9 +1,15 @@
 ---
 name: social-batch-review-calendar
 description: Turn a settled batch of social posts into an interactive Type app where the team and client can review, copy and publish. It has a weekly calendar showing each post's first paragraph and full image, a list view, copyable captions, downloadable full-resolution visuals, and the approver and status on every card. Use when a batch of 3+ posts across one or more accounts is ready for review or scheduling, instead of a PDF, a doc, image previews or a chat recap.
+license: MIT
+metadata:
+  author: StartupCookie
+  homepage: https://startupcookie.com
 ---
 
 # Social Batch Review Calendar
+
+> Made by [StartupCookie](https://startupcookie.com), a San Francisco marketing team for B2B startups.
 
 Reviewers need to **read** each caption, **see** its visual, **copy** the text and **download** the image, and know **who approves** it. PDFs, Word docs, chat recaps and image-only previews fail at least one of those. This skill builds a small static Type app that does all four, from a template that has been used with real clients.
 

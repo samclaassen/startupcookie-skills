@@ -1,9 +1,15 @@
 ---
 name: transparent-lower-third
 description: Make on-brand animated name tags (lower thirds) for testimonial and interview videos, delivered as transparent ProRes 4444 .mov files that drop straight onto a CapCut, Premiere, Final Cut or DaVinci timeline. Pulls brand fonts and colours from the live website, renders smooth sub-pixel motion, locks geometry across a set, and verifies every file frame by frame. Use for "make a name tag for this video", "lower third", "speaker title overlay".
+license: MIT
+metadata:
+  author: StartupCookie
+  homepage: https://startupcookie.com
 ---
 
 # Transparent Lower Third
+
+> Made by [StartupCookie](https://startupcookie.com), a San Francisco marketing team for B2B startups.
 
 Delivers a name tag that looks designed, animates smoothly, and stays identical across a series of videos except for the name and role.
 
